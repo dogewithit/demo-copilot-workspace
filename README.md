@@ -8,6 +8,10 @@ This project is a NestJS application that includes a module for collecting Bitco
 
 The `market-data` module is responsible for fetching Bitcoin market data from the Binance API. It includes a controller, service, and DTO for handling the data.
 
+### Triangular Arbitrage Module
+
+The `triangular-arbitrage` module is responsible for performing triangular arbitrage on BTC, ETH, and BNB using the Binance API. It includes a controller, service, and DTO for handling arbitrage data.
+
 ### Running the Project
 
 To run the project, follow these steps:
@@ -31,3 +35,13 @@ GET /market-data/bitcoin
 ```
 
 This will return the latest Bitcoin market data in JSON format.
+
+### Using the Triangular Arbitrage Module
+
+The `triangular-arbitrage` module provides an endpoint to fetch the latest triangular arbitrage opportunities. You can access the endpoint at:
+
+```
+GET /triangular-arbitrage
+```
+
+This will return the latest triangular arbitrage opportunities in JSON format.
